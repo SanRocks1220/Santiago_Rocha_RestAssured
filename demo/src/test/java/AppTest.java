@@ -17,6 +17,8 @@ public class AppTest extends TestConfig {
             .log().all()
         .when()
             .get("quotes")
+            // .get("https://dummyjson.com/quotes") // If we didn't have a Base/Config class
+            // we would make the request like this
         .then()
             .log().all();
     }
