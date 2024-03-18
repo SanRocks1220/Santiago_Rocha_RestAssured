@@ -90,7 +90,7 @@ public class AppTest extends TestConfig {
             .pathParam("todoId", 3)
         .when()
             .delete(TODOS_ENDPOINT)
-            // .put("https://dummyjson.com/todos/3")
+            // .delete("https://dummyjson.com/todos/3")
         .then()
             .statusCode(200);
     }
